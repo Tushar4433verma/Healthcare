@@ -1,0 +1,164 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 1.5rem 1.5rem #E5E5E5;
+    height: 90px;
+    width: 100%;
+}
+.header ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+.header a{
+    text-decoration: none;
+    color:black;
+    font-size: 2rem;
+}
+.header  a i{
+    color:#16A085;
+    font-size: 2rem;
+}
+.header ul li{
+    margin:30px;
+}
+.header ul li a{
+    font-size: 1.4rem;
+    color: gray;
+}
+.header ul li a:hover{
+    color:darkslategray;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    height: 600px;
+    width: 600px;
+}
+.container{
+    background-color: white;
+    padding: 25px;
+    width: 500px;
+    margin: 50px auto 0;
+    border-top: 5px solid #16A085;
+    box-shadow:0 0 7px 5px rgba(0,0,0,0.5);
+}
+.container h2{
+  font-size: 40px;
+  line-height: 24px;
+  padding: 30px;
+  text-align: center;
+}
+.input-name{
+     width: 90%;   
+     position: relative;
+     margin: 20px auto;   
+  
+     
+}
+.lock{
+    padding: 8px 11px;
+}
+
+.input-name span{
+  margin-left: 35px;
+}
+.text-name,.name{
+    width: 100%;
+    padding: 8px 0 8px 40px;
+}
+.input-name i{
+    position: absolute;
+    font-size: 18px;
+    color: #16A085;
+}
+.text-name,.name{
+    border: 1px solid #cccccc;
+    outline: none;
+}
+.text-name:hover,.name:hover{
+    box-shadow:0 0 3px 2px rgba(0,0,0,0.3);
+}
+.radio-button{
+    margin-right: 4px;
+}
+.country{
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    cursor: pointer;
+    border: 1 px solid #cccccc;
+    background-color: white;
+    color: #7b7b7b;
+    outline: none;
+    appearance: none;
+    transition: all 0.9s ease;
+}
+.country:hover{
+    box-shadow:0 0 3px 2px rgba(0,0,0,0.3);
+}
+.arrow{
+    position: absolute;
+    right: 15px;
+   top:15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-width:8px 5px 0 5px;
+    border-style: solid;
+    border-color: #16A085 transparent;
+}
+.check-button{
+      padding: 20px;
+}
+.check-button:hover{
+    box-shadow:0 0 3px 2px rgba(0,0,0,0.3);
+}
+.button{
+    background-color: #16A085;
+    color: white;
+    height: 35px;
+   line-height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    height: 50px;
+}
+.button:hover{
+    background-color: rgba(128, 128, 128, 0.264);
+    color: black;
+    box-shadow:0 0 3px 2px rgba(0,0,0,0.3);
+}
+@media (max-width:480px){
+    .container{
+        width: 100%;
+    }
+    .input-name{
+        margin-bottom: -10px;
+    }
+   
+    .input-name span{
+       
+        padding: 0;
+        margin: 0;
+    }
+}
+.error{
+    color: red;
+    margin: 0px;
+    text-align: left;
+}
+.check-button,.radio-button,.button{
+    cursor: pointer;
+}
